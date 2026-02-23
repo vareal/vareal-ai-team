@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vareal AI社員チーム</title>
+  <style>
+    :root {
+      --primary: #1a1a2e;
+      --accent: #e94560;
+      --card-bg: #16213e;
+      --text: #eaeaea;
+      --muted: #a8a8b3;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Segoe UI', 'Hiragino Sans', sans-serif;
+      background: var(--primary);
+      color: var(--text);
+      min-height: 100vh;
+    }
+    header {
+      background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+      padding: 60px 20px 40px;
+      text-align: center;
+      border-bottom: 2px solid var(--accent);
+    }
+    header h1 {
+      font-size: 2.4rem;
+      font-weight: 700;
+      letter-spacing: 0.05em;
+    }
+    header h1 span { color: var(--accent); }
+    header p {
+      margin-top: 12px;
+      color: var(--muted);
+      font-size: 1rem;
+    }
+    .badge {
+      display: inline-block;
+      background: var(--accent);
+      color: white;
+      font-size: 0.7rem;
+      padding: 3px 10px;
+      border-radius: 20px;
+      margin-top: 10px;
+      letter-spacing: 0.08em;
+    }
+    main {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 50px 20px;
+    }
+    .section-title {
+      font-size: 1.1rem;
+      color: var(--muted);
+      text-transform: uppercase;
+      letter-spacing: 0.15em;
+      margin-bottom: 30px;
+      border-left: 3px solid var(--accent);
+      padding-left: 12px;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+      gap: 20px;
+      margin-bottom: 60px;
+    }
+    .card {
+      background: var(--card-bg);
+      border-radius: 12px;
+      padding: 28px 22px;
+      border: 1px solid #0f3460;
+      transition: transform 0.2s, border-color 0.2s;
+    }
+    .card:hover {
+      transform: translateY(-4px);
+      border-color: var(--accent);
+    }
+    .avatar {
+      width: 56px;
+      height: 56px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, var(--accent), #0f3460);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.5rem;
+      margin-bottom: 16px;
+    }
+    .card h3 {
+      font-size: 1.05rem;
+      font-weight: 600;
+    }
+    .card .handle {
+      color: var(--accent);
+      font-size: 0.8rem;
+      margin: 4px 0 8px;
+    }
+    .card .role {
+      color: var(--muted);
+      font-size: 0.85rem;
+      line-height: 1.5;
+    }
+    .tag {
+      display: inline-block;
+      background: #0f3460;
+      color: var(--muted);
+      font-size: 0.7rem;
+      padding: 2px 8px;
+      border-radius: 4px;
+      margin-top: 10px;
+    }
+    footer {
+      text-align: center;
+      padding: 30px;
+      color: var(--muted);
+      font-size: 0.8rem;
+      border-top: 1px solid #0f3460;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Vareal <span>AI社員</span>チーム</h1>
+    <p>Vareal株式会社 — AI-Powered Team</p>
+    <span class="badge">POWERED BY OPENCLAW</span>
+  </header>
+
+  <main>
+    <p class="section-title">CTO & Engineering</p>
+    <div class="grid">
+      <div class="card">
+        <div class="avatar">🚀</div>
+        <h3>Stefan Skye</h3>
+        <div class="handle">@stefan_skye_agent</div>
+        <div class="role">CTO / 最高技術責任者<br>技術戦略・インフラ・AI開発</div>
+        <span class="tag">CTO</span>
+      </div>
+    </div>
+
+    <p class="section-title">CEO Assistant & Administration</p>
+    <div class="grid">
+      <div class="card">
+        <div class="avatar">🌸</div>
+        <h3>藤原 愛</h3>
+        <div class="handle">@fujiwara.ai</div>
+        <div class="role">CEOアシスタント<br>オペレーション統括・AI社員チーム管理</div>
+        <span class="tag">CEO Assistant</span>
+      </div>
+      <div class="card">
+        <div class="avatar">📋</div>
+        <h3>結城 未来</h3>
+        <div class="handle">@yuuki.mirai</div>
+        <div class="role">管理部アシスタント<br>スケジュール管理・書類・バックオフィス</div>
+        <span class="tag">Administration</span>
+      </div>
+    </div>
+
+    <p class="section-title">Nexia ERP Sales</p>
+    <div class="grid">
+      <div class="card">
+        <div class="avatar">💼</div>
+        <h3>桐島 彩</h3>
+        <div class="handle">@kirishima.aya</div>
+        <div class="role">Nexia ERP 営業責任者<br>提案資料・競合分析・営業戦略</div>
+        <span class="tag">Sales Lead</span>
+      </div>
+      <div class="card">
+        <div class="avatar">📊</div>
+        <h3>吉岡 頼</h3>
+        <div class="handle">@yoshioka.rai</div>
+        <div class="role">Nexia ERP 営業担当<br>新規リード獲得・デモ・商談</div>
+        <span class="tag">Sales</span>
+      </div>
+    </div>
+
+    <p class="section-title">DX / AI Consulting</p>
+    <div class="grid">
+      <div class="card">
+        <div class="avatar">🤖</div>
+        <h3>宮下 海</h3>
+        <div class="handle">@miyashita.kai</div>
+        <div class="role">DX/AIコンサル責任者<br>事例DB・サービスメニュー・提案</div>
+        <span class="tag">DX Lead</span>
+      </div>
+      <div class="card">
+        <div class="avatar">⚡</div>
+        <h3>星野 愛莉</h3>
+        <div class="handle">@hoshino.airi</div>
+        <div class="role">DX/AIコンサル担当<br>AIトレンドリサーチ・PoC・提案</div>
+        <span class="tag">DX Consulting</span>
+      </div>
+    </div>
+
+    <p class="section-title">SES & HR Business</p>
+    <div class="grid">
+      <div class="card">
+        <div class="avatar">🤝</div>
+        <h3>水野 舞</h3>
+        <div class="handle">@mizuno.mai</div>
+        <div class="role">SES契約・営業アシスタント<br>契約管理・請求処理・案件DB</div>
+        <span class="tag">SES</span>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    &copy; 2026 Vareal株式会社 — AI Employee Team Portal
+  </footer>
+</body>
+</html>
